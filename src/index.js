@@ -1,14 +1,17 @@
 const argv = require('yargs').argv
 const program = require('commander')
-const startProcess = require('../scripts/customized-config')
+const selectCra = require('../scripts/select-cra-app')
 
-function startReactProcess(processType) {
-  startProcess.startProcess(processType)
+
+function startReactProcess(craType, processType) {
+  console.log('startReactProcess')
+  selectCra.selectCra(craType, processType)
 }
 
 
 program
-  .option('--path', '[required] Path to package json for package under consideration')
+  .option('--compileType', '[required] Path to package json for package under consideration')
+  .option('--craType', '[required] Path to package json for package under consideration')
   .on('--help', () => {
     console.log()
     console.log(`    Example:-
@@ -19,15 +22,16 @@ program
 
 
 module.exports = {
-  run: function (path) {
-    if (path == "" || path == null) {
+  run: function (args) {
+    if (args == "" || args == null) {
       console.error(`No proper arguments are provided`)
-    } else if (path.path === '--help') {
+    } else if (args.path === '--help') {
       program.outputHelp()
       return
     } else {
-      console.info(`Paths to traverse:- ${path.processType}`);
-      startReactProcess(path.processType);
+      console.info(`Cra Type:- ${args.cra}`);
+      console.info(`Process Type:- ${args.processType}`);
+      startReactProcess(args.cra, args.processType);
     }
   }
 }

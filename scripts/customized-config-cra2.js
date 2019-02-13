@@ -12,19 +12,17 @@
 var rewire = require('rewire');
 var proxyquire = require('proxyquire');
 
-
-
 module.exports = {
-  startProcess: function (args) {
+  startProcess2: function (args) {
     console.log(`startProcess.. ${args}`)
     switch (args) {
       // The "start" script is run during development mode
       case 'start':
-        rewireModule('react-scripts/scripts/start.js', loadCustomizer('./config-overrides'));
+        rewireModule('react-scripts-ts/scripts/start.js', loadCustomizer('./config-overrides'));
         break;
         // The "build" script is run to produce a production bundle
       case 'build':
-        rewireModule('react-scripts/scripts/build.js', loadCustomizer('./config-overrides'));
+        rewireModule('react-scripts-ts/scripts/build.js', loadCustomizer('./config-overrides'));
         break;
       default:
         console.log('customized-config only supports "start", "build"');
