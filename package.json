@@ -1,6 +1,6 @@
 {
   "name": "@amittksharma/react-ts-sourcemaps",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "To embedd the sourcemaps of a react application and git information in an application",
   "main": "index.js",
   "scripts": {

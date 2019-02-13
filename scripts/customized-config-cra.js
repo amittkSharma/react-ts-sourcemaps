@@ -56,10 +56,14 @@ function rewireModule(modulePath, customizer) {
   // The customizer should *mutate* the config object, because
   // react-scripts imports the config as a `const` and we can't
   // modify that reference.
-  const configFactory = defaults.__get__('configFactory')
-  defaults.__set__('configFactory', env => {
-    let config = configFactory(env);
-    customizer(config);
-    return config
-  })
+
+  // const configFactory = defaults.__get__('configFactory')
+  // defaults.__set__('configFactory', env => {
+  //   let config = configFactory(env);
+  //   customizer(config);
+  //   return config
+  // })
+
+  let config = defaults.__get__('config');
+  customizer(config);
 }
