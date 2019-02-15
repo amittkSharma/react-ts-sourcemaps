@@ -23,7 +23,7 @@ program
   .on('--help', () => {
     console.log()
     console.log(`    Example:-
-            $iota-ui-startup --craVersion <'cra' | 'cra2'> --actionType <'start' | 'build'>`)
+            $react-ts-sourcemaps-git --craVersion <'cra' | 'cra2'> --actionType <'start' | 'build'>`)
   })
   .parse(process.argv)
 
