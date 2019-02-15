@@ -14,10 +14,14 @@
     "url": "git+https://github.com/amittkSharma/react-ts-sourcemaps.git"
   },
   "keywords": [
-    "ReactTs",
+    "React",
+    "Typescript",
+    "Start/Build process",
+    "UI App Bootstrap",
     "Sourcemaps",
-    "GIT",
-    "information"
+    "GIT information",
+    "GIT Branch",
+    "Commit Hash"
   ],
   "dependencies": {
     "commander": "2.19.0",
