@@ -2,6 +2,10 @@
 
 [![](https://img.shields.io/npm/v/@amittksharma/react-ts-sourcemaps.svg)](https://www.npmjs.com/package/@amittksharma/react-ts-sourcemaps)
 [![](https://img.shields.io/npm/dm/@amittksharma/react-ts-sourcemaps.svg)](https://www.npmjs.com/package/@amittksharma/react-ts-sourcemaps)
+[![](https://img.shields.io/npm/v/:scope/@amittksharma/react-ts-sourcemaps.svg)](https://img.shields.io/npm/v/:scope/@amittksharma/react-ts-sourcemaps.svg)
+
+
+
 
 ## Introduction
 
