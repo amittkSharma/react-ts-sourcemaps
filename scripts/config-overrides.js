@@ -1,7 +1,7 @@
 const path = require('path')
 const gitConfig = require('./git-config')
 
-module.exports = function (config) {
+module.exports = function(config) {
   // Updating env variables with Git information
   gitConfig(config)
   // Add the source map loader
@@ -12,10 +12,10 @@ module.exports = function (config) {
         let loaderList = rule[name]
         loaderList.splice(loaderList.length - 1, 0, {
           test: /\.(jsx|js)?$/,
-          use: ["source-map-loader"],
-          enforce: "pre",
-          exclude: /node_modules/
-        });
+          use: ['source-map-loader'],
+          enforce: 'pre',
+          exclude: /node_modules/,
+        })
       }
     })
   })
