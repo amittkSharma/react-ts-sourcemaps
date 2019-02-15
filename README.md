@@ -1,5 +1,8 @@
 # react-ts-sourcemaps
 
+[![](https://img.shields.io/npm/v/react-ts-sourcemaps.svg)](https://www.npmjs.com/package/react-ts-sourcemaps)
+[![](https://img.shields.io/npm/dm/react-ts-sourcemaps.svg)](https://www.npmjs.com/package/react-ts-sourcemaps)
+
 ## Introduction
 
 react-ts-sourcemaps package is a multi-purpose package performing the following tasks:
