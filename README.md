@@ -1,7 +1,7 @@
 # react-ts-sourcemaps
 
-[![](https://img.shields.io/npm/v/react-ts-sourcemaps.svg)](https://www.npmjs.com/package/react-ts-sourcemaps)
-[![](https://img.shields.io/npm/dm/react-ts-sourcemaps.svg)](https://www.npmjs.com/package/react-ts-sourcemaps)
+[![](https://img.shields.io/npm/v/@amittksharma/react-ts-sourcemaps.svg)](https://www.npmjs.com/package/@amittksharma/react-ts-sourcemaps)
+[![](https://img.shields.io/npm/dm/@amittksharma/react-ts-sourcemaps.svg)](https://www.npmjs.com/package/@amittksharma/react-ts-sourcemaps)
 
 ## Introduction
 
