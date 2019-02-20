@@ -37,6 +37,7 @@
     "typescript": "3.x.x"
   },
   "devDependencies": {
+    "cz-conventional-changelog": "2.1.0",
     "react-scripts": "2.1.3",
     "react-scripts-ts": "3.1.0",
     "typescript": "3.3.1"
@@ -46,5 +47,10 @@
   "bugs": {
     "url": "https://github.com/amittkSharma/react-ts-sourcemaps/issues"
   },
-  "homepage": "https://github.com/amittkSharma/react-ts-sourcemaps#readme"
+  "homepage": "https://github.com/amittkSharma/react-ts-sourcemaps#readme",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }
