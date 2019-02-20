@@ -11,21 +11,22 @@
 */
 var rewire = require('rewire')
 var proxyquire = require('proxyquire')
+const color = require('ansi-colors')
 
 module.exports = {
-  startCra2Process: function(args) {
-    console.log(`Initializing create react app2 process for action: ${args}`)
+  startCra2Process: function (args) {
+    console.log(color.greenBright(`Initializing create react app2 process for action: ${args}`))
     switch (args) {
       // The "start" script is run during development mode
       case 'start':
         rewireModule('react-scripts-ts/scripts/start.js', loadCustomizer('./config-overrides'))
         break
-      // The "build" script is run to produce a production bundle
+        // The "build" script is run to produce a production bundle
       case 'build':
         rewireModule('react-scripts-ts/scripts/build.js', loadCustomizer('./config-overrides'))
         break
       default:
-        console.log('customized-config only supports "start", "build"')
+        console.error(color.redBright('customized-config only supports "start", "build"'))
         process.exit(-1)
     }
   },
