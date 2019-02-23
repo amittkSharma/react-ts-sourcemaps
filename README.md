@@ -1,11 +1,12 @@
 # react-ts-sourcemaps
 
 [![](https://img.shields.io/npm/v/@amittksharma/react-ts-sourcemaps.svg)](https://www.npmjs.com/package/@amittksharma/react-ts-sourcemaps)
+
 [![](https://img.shields.io/npm/dm/@amittksharma/react-ts-sourcemaps.svg)](https://www.npmjs.com/package/@amittksharma/react-ts-sourcemaps)
+
 [![](https://img.shields.io/npm/l/@amittksharma/react-ts-sourcemaps.svg)](https://img.shields.io/npm/l/@amittksharma/react-ts-sourcemaps)
 
-
-
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
 ## Introduction
 
